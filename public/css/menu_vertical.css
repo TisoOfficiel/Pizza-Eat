@@ -1,0 +1,171 @@
+/* Menu vertical */
+.containersidebar{
+    position:absolute;
+    visibility:hidden;
+    z-index: 1000;
+    height:100vh;
+    top: 0;
+    background: rgba(38, 38, 38, 0.8);
+    width: 100%;
+    transition: opacity 0.5s;
+    overflow: hidden;
+}
+.sidenavguest {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    transform: translateX(-300px);
+    opacity: 1;
+}
+  
+
+.sidenav{
+    height: 100%;
+    width: 300px;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    transform: translateX(-300px);
+    opacity: 1;
+}
+  /* Fermeture menu */
+
+#closenav{
+    cursor:pointer;
+    position:absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Vision connecter */
+
+/* Container profile */
+.profileContainer{
+    padding-left: 32px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.profileIcone{
+    cursor:default;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background: rgb(255,255,255);
+    background: rgb(173,173,173);
+    background: rgb(173,173,173);
+    background: radial-gradient(#ffffff, #cacaca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileIcone i {
+    font-size:36px;
+    color: grey
+}
+
+.profileInfo{
+    margin-left: 15px;
+}
+
+
+.profileInfo > *{
+    margin: 0;
+    text-decoration: none;
+}
+
+.profileInfo >p {
+    font-size:20px;
+    display: flex;
+}
+
+.profileInfo > a{
+    font-size:16px;
+    color: #048848;
+    font-weight: bolder;
+}
+
+/* Icon admin */
+#adminIcon{
+    margin-left:5px;
+    color:rgb(0, 174, 255);
+}
+
+/* Liste des a du menu vertical */
+  .sidenavlist {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/* Listes liens */
+/* admin */
+
+.sidenavdashboard{
+    margin-top:15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:32px;
+}
+/* Commande */
+
+.sidenavCommande{
+    margin-top:15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:32px;
+}
+
+/* Changement de compte */
+
+.sidenavChangementCompte{
+    margin-top:15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:32px;
+}
+
+/* Deconnexion */
+
+.sidenavdeconnexion{
+    position: absolute;
+    bottom: 100px;
+    margin-top:15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:32px;
+    color: rgb(107, 107, 107);
+}
+
+.sidenavdeconnexion >a{
+    color: rgb(107, 107, 107);
+}

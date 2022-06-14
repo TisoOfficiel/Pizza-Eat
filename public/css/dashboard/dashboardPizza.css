@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color:#fbf5ee;
+}
+
+
+
+
+
+  /* Body  */
+.dashboardPizza{
+    display: flex;
+    height:89vh;
+} 
+form{
+    margin: 0;
+}
+.dashboardPizzaContainer{
+    width:100%;
+    padding: 0 30px;
+}
+.addPizzaContainer{
+    height: 70px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: 1px solid rgba(92, 92, 92, 0.247);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+/* Button ajout pizza */
+.btnAddPizza{
+    border: none;
+    border-radius: 15px;
+    font-size:18px;
+    cursor:pointer;
+    height:50px;
+    width: 200px;
+    background:black;
+    color: white;
+}
+
+.btnAddPizza:hover{
+    background-color:rgb(53, 53, 53);
+}
+
+/* Calendrier */
+.calendarPizza{
+    padding: 0.5rem 0.75rem;
+    font-weight: 400;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #cfdbe6;   
+    border-radius: 0.25rem;
+}
+/* Modal d'ajout Pizza */
+.modalPizza{
+  
+    display: none;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    z-index: 3;
+    height:100%;
+    width:100%;
+    top: 0;
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.containerAddModalPizza,.containerEditModalPizza{
+    animation: fadeIn 1s both;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 400px;
+    height:600px;
+    background:white;
+}
+
+.modalPizzaAddheader,.modalPizzaEditheader{
+    
+    display: flex;
+    justify-content:flex-end;
+    width: 100%;
+    
+}
+.close{
+    cursor: pointer;
+    height:40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.FormAddModalPizza,.FormEditModalPizza{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0;
+    width:100%;
+    height: 100%;
+}
+
+.formContent{
+    
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    font-size:24px;
+}
+
+.inputAddmodalPizza,.inputEditmodalPizza{
+    border: 1px solid black;
+    height:40px;
+    font-size:18px;
+}
+
+
+#descriptionPizzaAdd,#descriptionPizzEdit{
+    height:200px;
+    resize: none;
+}
+
+.btndiv{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.btn{
+    transition:0.5s;
+    width:100%;
+    height:60px;
+    background:black;
+    color:white;
+    border: none;
+    font-size: 20px;
+    
+}
+
+.btn:hover{
+    background-color:rgb(53, 53, 53);
+}
+.pizzaContainer{
+    
+    margin-top: 30px;
+    background:white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.pizzaListItem{
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(92, 92, 92, 0.247);
+}
+.pizzaListItem:hover{
+    background:rgb(233 233 233)
+}
+.pizzaListInfo{
+    margin-left: 15px;
+    display:flex;
+    align-items: center;
+    width: 20%;
+    padding: 10px 0px;
+}
+.pizzaListInfoImg{
+    border: 2px solid rgba(119, 119, 119, 0.247);
+    border-radius:10px;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+.pizzaListDescription{
+    width: 50%;  
+}
+
+.pizzaListPrix{
+    display:flex;
+    justify-content:center;
+    width: 15%;
+    
+}
+.pizzaListDate{
+    display:flex;
+    justify-content:center;
+    width: 20%;
+    margin-right: 40px;
+}
+
+
+.pizzaListMoreOption{
+    display:flex;
+    color:black;
+    justify-content:center;
+    margin-right: 15px;
+    border-radius:5px;
+    border: 2px solid rgba(119, 119, 119, 0.247);
+    cursor: pointer;
+}
+
+.pizzaListMoreOptionLinkIcon{
+    font-size: 34px !important;
+}
+
+
+.test{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:flex-end;
+}
+.test>a{
+    text-decoration: none;
+    margin: 0px 5px;
+    color: black;
+}
+
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}

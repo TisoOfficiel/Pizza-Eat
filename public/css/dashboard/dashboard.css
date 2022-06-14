@@ -1,0 +1,479 @@
+
+
+
+
+
+/* Contenue de la page dashboard */
+
+.dashboardContainer{
+    display: flex;
+    height:89vh;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dashboardMenu{
+    z-index: 0;
+    width:20%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background:white;
+}
+.dashboardContent{
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+/* w3 */
+  
+  /* Style the buttons inside the tab */
+  .dashboardMenu button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .dashboardMenu button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .dashboardMenu button.active {
+    background-color: #ccc;
+  }
+
+
+.h1{
+    font-size:calc(1.3rem + .6vw);
+}
+
+.separation{
+    width: 100%;
+    border: 1px solid rgba(204, 204, 204, 0.247);
+}
+
+/* Widget Info*/
+
+.widgetTop{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height:auto;
+    width: 100%;  
+    /* background-color:red; */
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.recette,.nbUser,.nbPizza,.nbCommande{
+    margin-top: 20px;
+    border-radius:15px;
+    background:white;
+    height:150px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: rgb(200 200 200) 0px 0px 20px 0px;
+    transition:0.5s;
+}
+
+.recette:hover,.nbUser:hover,.nbPizza:hover,.nbCommande:hover{
+    transform: scale(1.05);
+    transition:0.5s;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+/* Widget Recette */
+.recetteContent{
+    margin-left: 15px;
+    height: 60px;
+}
+.recetteTitle{
+    color: #6b7b93;
+    font-size:18px;
+    margin: 0;
+}
+.recetteValue{
+    margin: 0;
+    font-size:32px;
+}
+.recetteIconContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:#048848;
+    margin-right: 15px;
+}
+
+.iconrecette{
+    font-size:34px !important;
+    color: white;
+}
+
+
+/* Widget Utilisateur */
+.nbUserContent{
+    margin-left: 15px;
+    height: 60px;
+}
+.nbUserTitle{
+    color: #6b7b93;
+    font-size:18px;
+    margin: 0;
+}
+.nbUserNumber{
+    margin: 0;
+    font-size:32px;
+}
+.nbUserIconContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:rgb(0, 153, 255);
+    margin-right: 15px;
+}
+
+.iconNbUser{
+    font-size:34px !important;
+    color: white;
+}
+
+/* Widget Commande */
+
+.nbCommandeContent{
+    margin-left: 15px;
+    height: 60px;
+}
+.nbCommandeTitle{
+    color: #6b7b93;
+    font-size:18px;
+    margin: 0;
+}
+.nbCommandeValue{
+    margin: 0;
+    font-size:32px;
+}
+.nbCommandeIconContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:#ff7300;
+    margin-right: 15px;
+}
+
+.iconNbCommande{
+    font-size:34px !important;
+    color: white;
+}
+
+/* Widget Pizza */
+.pizzaContent{
+    margin-left: 15px;
+    height: 60px;
+}
+.pizzaTitle{
+    color: #6b7b93;
+    font-size:18px;
+    margin: 0;
+}
+.pizzaNumber{
+    margin: 0;
+    font-size:32px;
+}
+.pizzaIconContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:rgb(255, 8, 0);
+    margin-right: 15px;
+}
+
+.iconPizza{
+    font-size:34px !important;
+    color: white;
+    transform: rotate(20deg);
+}
+
+/* Widget Body */
+.widgetBody{
+    /* background:red; */
+    height:60%;
+    width: 100%; 
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Tableau des commandes */
+.tableCommandeContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    border: 1px solid rgb(207, 207, 207);
+    width: 860px;
+    height:auto;
+    background:white;
+    border-radius: 15px;
+    position:relative;
+    box-shadow: rgb(200 200 200) 0px 0px 20px 0px;
+}
+.NoCommandeContainer{
+    cursor: default;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 5;
+    background: rgba(38, 38, 38, 0.95);
+    position:absolute;
+    width: 860px;
+    height:100%;
+    border-radius: 15px;
+}
+.NoCommandeContainer>p{
+    font-size:36px;
+    color:rgb(175, 175, 175);
+}
+.tableCommandeTitle,.recentUserTitle{
+    margin-left: 15px;
+    font-size:22px;
+}
+
+/* Pagination */
+.tableCommandePagination{
+    position:absolute;
+    top: 0;
+    right: 15px;
+}
+
+.tableCommandeContent{
+    border-collapse: collapse;
+    width:95%; 
+    margin-bottom: 15px;
+}
+.tableCommandeHeader {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.tableCommandeligne{
+    height:50px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    display: flex;
+    justify-content:space-between;
+}
+.tableCommandeligne:hover{
+    background:rgb(226, 226, 226)
+}
+.tableCommandeligne>td{
+    width: 100px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.Text-Start{
+    margin-left: 30px;
+}
+.statueNonTraite{
+    display: inline-block;
+    border-radius:35px;
+    padding: 6px;
+    color: #920000;
+    background-color: #fdcccc;
+    border-color: #fbb3b3;
+}
+.statueEntraitement{
+    display: inline-block;
+    border-radius:35px;
+    padding: 6px;
+    color: #ff8800;
+    background-color: #f0ddcc;
+    border-color: #e9d3b3;
+}
+.statuePrete{
+    display: inline-block;
+    border-radius:35px;
+    padding: 6px;
+    color: #0099ff;
+    background-color: #ccdff0;
+    border-color: #b3d8e9;
+}
+.statueRecuperee{
+    display: inline-block;
+    border-radius:35px;
+    padding: 6px;
+    color: #006d0e;
+    background-color: #ccf0d1;
+    border-color: #b3e9b9;
+}
+
+.tableCommandeDetail{
+    margin-right: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(108, 117, 125, 0.25);
+    color: #000;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+/* Tableau utilisateurs récent inscrit */
+.recentUserContainer{
+    margin-top: 15px;
+    border: 1px solid rgb(207, 207, 207);
+    width: 400px;
+    height:auto;
+    background:white;
+    border-radius: 15px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgb(200 200 200) 0px 0px 20px 0px;
+}
+
+.recentUserHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+}
+.recentUserlink{
+    color: #048848;
+    text-decoration: none;
+    font-weight:600;
+    cursor: pointer;
+    margin-right: 15px;
+    transition:0.5s;
+}
+.recentUserlink:hover{
+    color:#04b861;
+    transition:0.5s;
+}
+.recentUserContent{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid rgb(207, 207, 207);
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    height:100px;
+    transition: 0.5s;
+}
+.recentUserContent:hover{
+    transform: scale(1.05);
+    transition:0.5s;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+
+}
+.userIconProfile{
+    margin: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,255,255);
+    background: rgb(173,173,173);
+    background: rgb(173,173,173);
+    background: radial-gradient(#ffffff, #cacaca);
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+}
+.recentIconUser{
+    font-size: 32px !important;
+}
+.UserProfileContent{
+    width:70%;
+    height:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.recentUserInfo{
+    font-size:18px;
+    font-weight:500;
+}
+
+.recentUserRoleAdmin{
+    color: red;
+}
+.recentUserRoleCook{
+    color: #00a2ff;
+}
+.recentUserRoleUser{
+    color: #6b7b93;
+}
+
+
+.UserProfileContent>p{
+    margin: 0;
+}
+.userIconMoreInfo{
+    margin-right: 15px;
+    color: black;
+}
+/* .tableUserligne{
+    height:58px;
+}
+
+.tableUserHeader{
+    height:58px;
+
+} */
+
+/* Pagination */
+.next-link{
+    color:black;
+    text-decoration:none;
+}
+.disable{
+    cursor: pointer;
+    color:grey;
+}
+.previous-link{
+    text-decoration:none;
+    color:black;
+}
+
+.next-link:hover, .previous-link:hover{
+    color:black;
+}
+
+/* Pour Admin Pizza */
+/* Header */
+

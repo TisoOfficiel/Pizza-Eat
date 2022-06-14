@@ -1,0 +1,170 @@
+.commandeUserContainer{
+    width: 100%;
+    height:89vh;
+    display: flex;
+}
+
+.dashboardUserListe{
+    display: flex;
+    height:89vh;
+}
+ 
+.commandeUserContent{
+    width:100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 10px;
+}
+
+.commandeUserContentBody{
+   
+    width:100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    background:white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.commandeUserContentBodyHeader{
+    width:100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 2px solid rgb(230, 230, 230);
+}
+
+.formFilterCommandeUser{
+    margin-right: 30px;
+}
+
+.tablecontentUserCommande{
+    margin-top: 10px;
+}
+
+.tablecontentUserCommandeHeader{
+    color: #adb5bd;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    height:50px;
+}
+td{
+    height:60px;
+    text-align: center;
+    width: 200px;
+}
+
+table{
+   
+    border-collapse: collapse;
+    margin: 0 30px;
+   
+
+}
+
+.tablecontentUserCommandeInfo:nth-of-type(2n) {
+    background:#e7e7e7;
+}
+.tablecontentUserCommandeInfo:hover{
+    background:#b8b8b8;
+}
+
+.statutEnvoye{
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #920000;
+    background-color: #fdcccc;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.statutTraitement{
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #98530c;
+    background-color: #ffe8d0;
+    display: inline-block;
+    font-weight: 600;
+}
+.statutPret{
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #0099ff;
+    background-color: #ccdff0;
+    display: inline-block;
+    font-weight: 600;
+}
+
+
+.test{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:center;
+    padding-right: 30px;
+}
+.test>a{
+    text-decoration: none;
+    margin: 0px 5px;
+    color: black;
+}
+.formFilterCommandeUser{
+    width: 100%;
+    
+}
+
+select{
+    width: 100%;
+    padding: 0px 12px 0px 16px;
+    height: 36px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #EEEEEE;
+    border-radius: 35px;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #000000;
+}
+.arrowSelectContainer{
+    right: 8px;
+    top: calc(50% - 12px);
+    pointer-events: none;
+    position: absolute;
+}
+
+.arrowSelectContent{
+        line-height: 1; 
+        width: 24px;
+        height: 24px;
+}
+.selectContainer{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.commandeUserContentHeader{
+    position: relative;
+    margin-right: 15px;
+    
+}
+.tableCommandeDetail{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(108, 117, 125, 0.25);
+    color: #000;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+}

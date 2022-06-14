@@ -1,0 +1,192 @@
+
+
+/* Les pizzas */
+.bodyContainer{
+    
+    position:relative;
+}
+.pizzaLink{
+    color: black;
+}
+.contentContainer{
+    /* margin-top:110px; */
+    /* overflow:hidden; */
+    height:89vh;
+    display:flex;
+    flex-direction: row;
+    
+    align-items:center;
+    z-index: 1;
+    position: relative;
+}
+.pizzaContainer{
+    height:84vh;
+   
+    padding: 50px 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap; 
+    /* border: 1px solid black; */
+}
+
+.pizzaContent{
+    transition:0.5s;
+    background:white;
+    box-shadow: rgb(200 200 200) 0px 0px 20px 0px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+}
+
+
+/* .pizzaContent:hover{
+    transition:0.5s;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+} */
+
+.PizzaINFORMATION >h6{
+   
+    font-size: 24px;
+    margin: 0;
+}
+.PizzaINFORMATION{
+    
+    position:absolute;
+    bottom:30px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-around;
+}
+.PizzaINFORMATION>h4{
+    border-radius: 35px;
+    display:block;
+    background:rgb(212, 212, 212);
+    padding: 10px 15px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.iconaddContainer{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border-radius: 35px;
+    height:40px;
+    min-width: 30px;
+    padding: 0 5px;
+    top: 15px;
+    right: 20px;
+    position:absolute;
+    font-size: 22px;
+    margin: 0;
+    box-shadow: rgb(200 200 200) 0px 0px 20px 0px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.numberquantite{
+    margin: 0 10px;
+}
+.iconaddContainer>form,.iconaddContainer1>form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+}
+
+.addshoppingCartButton,.removeshoppingCartButton{
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background:none;
+    height:30px;
+    width:30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:35px;
+    color: white;
+}
+
+.addshoppingCartButton:hover,.removeshoppingCartButton:hover{
+    background:grey;
+}
+.iconaddContainer:hover {
+    /* width: 80px; */
+    transition: 0.4s;
+    /* border-radius: 35px; */
+}
+.iconaddContainer>i{
+    color:white;
+
+}
+
+
+/* Menu Filtre */
+
+.filtre{
+    border: 2px solid red;
+    width:500px;
+    height:100%;
+    display: flex;
+    
+}
+td{
+    background-color:red;
+}
+
+
+
+
+/* Vision guest */
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:250px;
+    height:60px;
+    background-color:black;
+}
+
+.loginLink {
+    font-size:22px;
+    color:white;
+    text-decoration: none;
+}
+
+.registerContainer{
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    justify-content: flex-start;
+    width:250px;
+}
+.registerContainer >a{
+    text-decoration: none;
+    color:black;
+}
+
+.testpaginate{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content:center;
+    padding-right: 30px;
+    align-items: center;
+    padding-right: 30px;
+}
+.testpaginate>a{
+    text-decoration: none;
+    margin: 0px 5px;
+    color: black;
+}

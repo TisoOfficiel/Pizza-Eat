@@ -1,0 +1,346 @@
+.settingsContainer{
+    width: 100%;
+    height:89vh;
+    display: flex;
+}
+
+
+form{
+    margin: 0;
+}
+
+.settingsContent{
+    width:100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 10px;
+}
+
+.settingsContentBody{
+    width:100%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    background:white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profileSettingContainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    width:100%;
+    height:100%;
+    display: flex;
+}
+
+.profileSettingContent{
+    display: flex;
+    width:90%;
+    flex-direction: column;
+    font-size:22px;
+}
+form{
+    
+    margin-top: 30px;
+    width: 100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.profileSettingContent>input{
+    padding-left: 10px;
+    width: 100%;
+    font-size:20px;
+    height:40px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 168, 168);
+    margin-bottom: 30px;
+}
+.profileSettingContent:hover>input{
+    border: 1px solid rgb(124, 124, 124);
+}
+.photoprofileContainer{
+    border-left: 1px solid rgba(59, 59, 59, 0.247);
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.photoprofileContent{
+    width:200px;
+    height:200px;
+    border-radius: 500px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.photoprofileContent>i{
+    font-size:150px;
+}
+.photoprofileContainer>button{
+    cursor:pointer;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    border: 1px solid black;
+    border-radius:10px;
+    height:50px;
+    width:110px;
+    font-size:18px;
+}
+.photoprofileContainer>button:hover{
+    background:black;
+    color:white;
+}
+.photoprofileContainer>button>i{
+    margin-right: 15px;
+}
+
+.btnsave:hover{
+    background:rgb(53, 53, 53);
+}
+.btnsave{
+    cursor: pointer;
+    border:none;
+    background:black;
+    color:white;
+    font-size:20px;
+    height:100%;
+    width:auto;
+    padding: 15px;
+}
+
+.profileContentSubmit{
+    margin-bottom: 30px;
+    width: 100%;
+    font-size:20px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+}
+
+.separation{
+    border: 1px solid rgba(59, 59, 59, 0.247);
+    margin: 0 40px;
+}
+.cardResetremove{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    height:100%;
+}
+
+.resetPassword,.removeCount{
+    position: relative;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius:15px;
+    height: 120px;
+    width:500px;
+    display: flex;
+    background-color:#f8f9fa;
+}
+.resetPasswordInfo,.removeCountdInfo{
+    margin-left: 15px;
+}
+
+.resetPasswordInfo>p,.removeCountdInfo>p{
+    color:rgb(163, 163, 163);
+}
+.resetPassword>button,.removeCount>button{
+    cursor: pointer;
+    height:30px;
+    position :absolute;
+    top: 15px;
+    right: 15px;
+    border: 1px solid rgb(168, 168, 168);
+    background:white;
+    border-radius:5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s;
+}
+
+.removeCount>button{
+    border: 1px solid red;
+    color:red;
+}
+.resetPassword>button:hover{
+    border: 1px solid rgb(92, 92, 92);
+}
+
+.removeCount>button:hover{
+    background: red;
+    color:white;
+}
+
+
+section{
+    position:absolute;
+    top: 0;
+    display:none;
+    height:100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background:rgba(38, 38, 38, 0.8);
+}
+
+
+.modalChangementMdp{
+    background:white;
+    width: 380px;
+    height:500px;
+    border-radius:15px;
+    
+    animation: fadeIn 1s both;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0 30px;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+.modalChangementMdpContainer{
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:relative;
+}
+.closeeditmdp{
+    position:absolute;
+    top:30px;
+    left: 0;
+    cursor:pointer;
+
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.formContenteditmdp{
+    margin-bottom: 20px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:20px;
+}
+
+.formContenteditmdp>input{
+    padding-right: 0;
+    width: 100%;
+    font-size:16px;
+    height:40px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 168, 168);
+}
+.formContenteditmdp:hover>input{
+    border: 1px solid rgb(124, 124, 124);
+}
+
+.formContentSubmitNewmdp{
+    width: 100%;
+    font-size:20px;
+    height:50px;
+    border-radius: 5px;
+    margin-top: 40px;
+    
+}
+
+.btn:hover,.btnremoveCountY:hover{
+    background:rgb(53, 53, 53);
+}
+.btn{
+    cursor: pointer;
+    border:none;
+    background:black;
+    color:white;
+    font-size:20px;
+    height:100%;
+    width:100%;
+}
+
+
+
+.removeCounContainer{
+    background:white;
+    width: 380px;
+    height:200px;
+    border-radius:15px;
+    animation: fadeIn 1s both;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titleRemoveCountContent{
+   
+    text-align:center;
+}
+
+.btnCountContent{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.btnremoveCountY{
+    cursor: pointer;
+    border:none;
+    background:black;
+    color:white;
+    font-size:20px;
+    height:50px;
+    width:150px;
+}
+.btnremoveCountY>a{
+    color:white;
+    text-decoration:none;
+}
+
+
+.btnremoveCountN{
+    cursor: pointer;
+    border:none;
+    background:white;
+    border: 1px solid black;
+    color:black;
+    font-size:20px;
+    height:50px;
+    width:150px;
+}
+
+.btnremoveCountN:hover{
+    background:rgb(184, 184, 184);
+}

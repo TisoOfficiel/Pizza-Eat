@@ -1,0 +1,175 @@
+.CommandeContainerBody{
+    width: 100%;
+    min-height: 89.6vh;
+    position: relative;
+    display: flex;
+    background: rgb(246, 246, 246);
+}
+
+
+/* Partie de gauche */
+.recapInfoCommandeContainer{
+    padding-left:30px;
+    width:55%;
+    min-height: 89vh;
+    padding-right: 70px;
+    background:white;
+}
+
+.livraisonContainer{
+   
+    width:100%;
+    height:auto;
+}
+
+.livraisonLieuContainer,.livraisonmethodeContainer{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    width:100%;
+    height:50px;
+}
+
+.livraisonLieuContainertest{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    width:100%;
+    height:70px;
+}
+
+.livraisonlieuContent,.livraisonmethodeContent{
+    display: flex;
+    align-items:center;
+}
+
+.livraisonlieuInfo{
+    margin-left: 15px;
+    display: flex;
+    flex-direction:column;
+}
+.livraisonlieuInfo>p{
+    margin: 0;
+}
+
+.livraisonlieuInfoAdresse,.livraisonmethode{
+    font-weight:600;
+}
+
+.livraisonlieuInfoVille{
+    color:grey;
+}
+
+.livraisonmethodinstruction{
+    color: #048848;
+}
+
+.livraisonlieuicon>i,.livraisonmethodeicon>i{
+    font-size:28px ;
+}
+.commandeRecapbtn{
+    cursor:pointer;
+    margin-right: 15px;
+    padding: 10px 15px;
+    background:rgb(226, 226, 226);
+    border: none;
+    border-radius: 35px;
+}
+.commandeRecapbtnAdd{
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background:rgb(226, 226, 226);
+    border: none;
+    border-radius: 35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.livraisondureeheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.livraisondureeheader>div{
+    margin-right: 15px;
+}
+
+.livraisoneditContent>p{
+    margin-right: 15px;
+}
+/* Partie de droite */
+.recapPrixCommandeContainer{
+    padding-right: 50px;
+    padding-left: 50px;
+    
+    background:rgb(246, 246, 246);
+    position: sticky;
+    top: 0;
+    margin-left: 30px;
+    width: 45%;
+    height:100%;
+}
+
+.recapPrixCommandeContent{
+    
+   
+    width: 100%;
+}
+
+.commandebtn{
+    margin-top: 40px;
+    width: 100%;
+    background:rgb(3 112 60);
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.commandebtnlink{
+    color: white;
+    font-size:24px;
+}
+
+.el{
+    height:16px;
+}
+.gp{
+    height:12px;
+}
+
+
+
+.condition{
+    margin: 0;
+    color: grey;
+    font-size:12px;
+}
+.livraisoncommandepaiementheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:24px;
+    font-weight: none;
+}
+
+.separation{
+    margin: 0px 0px 24px;
+    height: 2px;
+    border: none;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    background-color: rgb(226, 226, 226);
+}
+
